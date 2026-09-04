@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="bakery-logo_c.png" alt="North Star Bakery logo">
+    <h1>North Star Bakery</h1>
+    <p>Fresh baked goods made every day.</p>
+</header>
+<nav aria-label="Main navigation">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Our Products</h2>
+        <div class="content-row">
+            <img src="bakery-signature-loaf_c.png"
+                 alt="North Star Bakery signature loaf resting on a cloth">
+            <div>
+                <p>We offer a small selection of bakery favorites. Items can change depending on what is available that day.</p>
+            </div>
+        </div>
+
+        <div class="product-grid">
+            <article class="product-card">
+                <h3>Signature Bread Loaf</h3>
+                <p>Fresh bread with a crisp crust and soft center.</p>
+                <p><strong>$6.00</strong></p>
+                <button type="button" class="favorite-btn" data-product="bread" aria-pressed="false">Save Favorite</button>
+            </article>
+            <article class="product-card">
+                <h3>Chocolate Chip Cookie</h3>
+                <p>A soft cookie made with chocolate chips.</p>
+                <p><strong>$2.50</strong></p>
+                <button type="button" class="favorite-btn" data-product="cookie" aria-pressed="false">Save Favorite</button>
+            </article>
+            <article class="product-card">
+                <h3>Butter Croissant</h3>
+                <p>A flaky croissant baked fresh in the morning.</p>
+                <p><strong>$3.25</strong></p>
+                <button type="button" class="favorite-btn" data-product="croissant" aria-pressed="false">Save Favorite</button>
+            </article>
+            <article class="product-card">
+                <h3>Custom Cake</h3>
+                <p>Custom cakes are available for birthdays and other events.</p>
+                <p><strong>Starting at $30.00</strong></p>
+                <button type="button" class="favorite-btn" data-product="cake" aria-pressed="false">Save Favorite</button>
+            </article>
+        </div>
+
+        <section class="saved-box" aria-live="polite">
+            <h2>Your Saved Favorites</h2>
+            <p id="favorites-empty">You have not saved any favorites yet.</p>
+            <ul id="favorites-list"></ul>
+        </section>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 North Star Bakery</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

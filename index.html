@@ -1,9 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>North Star Bakery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+    <img class="logo" src="bakery-logo_c.png" alt="North Star Bakery logo">
     <h1>North Star Bakery</h1>
+    <p>Fresh baked goods made every day.</p>
+</header>
+<nav aria-label="Main navigation">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="hero">
+        <div>
+            <h2>Welcome to North Star Bakery</h2>
+            <p>We are a neighborhood bakery serving fresh bread, cookies, pastries, cakes, and other baked goods.</p>
+            <p>Our goal is to give customers a friendly place to stop in for something fresh.</p>
+        </div>
+        <picture>
+            <source media="(max-width: 600px)" srcset="bakery-feature-small_c.png">
+            <img src="bakery-feature-large_c.png"
+                 alt="Bakery display filled with cookies and other baked treats">
+        </picture>
+    </section>
+
+    <section class="content-row">
+        <figure class="card">
+            <img src="bakery-bread_c.png"
+                 alt="Fresh loaves of bread displayed behind a bakery counter">
+            <figcaption>A selection of fresh bread available at North Star Bakery.</figcaption>
+        </figure>
+        <div class="card">
+            <h2>Fresh From the Bakery</h2>
+            <p>Our bread and baked goods are prepared for customers who want simple, fresh food in a welcoming setting.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Bakery Video</h2>
+        <video controls>
+            <source src="bakery-tour.mp4" type="video/mp4">
+            Your browser does not support the video. Visit North Star Bakery to see the bakery in person.
+        </video>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 North Star Bakery</p>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>
